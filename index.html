@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Homepage Clone (Spring Equinox) - by Rob Guthrie</title>
+  <meta charset="UTF-8">
+  <style>
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+body, div, nav, ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  float: right;
+  margin-right: 24px;
+  margin-top: 20px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: rgba(0,0,0,0.87);
+  font-size: 13px;
+  text-decoration: none;
+  margin: 7px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#options {
+  background: url("../images/icons.png") -137px 26px;
+  margin-top: -1px;
+}
+
+#options, #options img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+#options img {
+  opacity: 0.40;
+}
+
+#sign-in {
+  opacity: 1;
+  margin-left: 45px;
+  border: 1px solid #4285f4;
+  outline: none;
+  background: #4285f4;
+  background: -moz-linear-gradient(top,#4387fd,#4683ea);
+  background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+  background: linear-gradient(top,#4387fd,#4683ea);
+  color: #fff;
+  padding: 7px 12px;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: default;
+}
+
+#sign-in:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#container {
+  clear: both;
+  padding-top: 160px;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.search-bar {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  transition: box-shadow 0.25s ease-in-out;
+  width: 600px;
+  height: 45px;
+  border: 1px solid #1112;
+  border-radius: 2px;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+.search-bar:hover {
+  box-shadow: 1px 1px 5px rgba(0,0,0,.25);
+}
+
+.search-button {
+  background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
+  -moz-border-radius: 2px;
+  -moz-user-select: none;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: default;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 11px 4px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+  height: 36px;
+  line-height: 27px;
+  margin-top: 30px;
+}
+
+
+.search-button:hover {
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222;
+}
+
+.change-language {
+  font-size: small;
+}
+
+.change-language a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  display: inline-block;
+  margin-left: 23px;
+  color: rgb(102, 102, 102);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#footer-left {
+  margin-left: 7px;
+}
+
+#footer-right {
+  float: right;
+  margin-right: 30px;
+}
+</style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Gmail</a></li>
+      <li><a href="#">Images</a></li>
+      <li><a id="options" href="#"><img src="assets/images/white.png"></li>
+      <li><a id="sign-in" href="#">Sign in</a></li>
+    </ul>
+  </nav>
+
+  <div id="container">
+    <img src="https://www.google.com/logos/doodles/2018/spring-equinox-2018-5263345362927616.2-law.gif">
+
+    <form action="#" method="GET">
+      <input class="search-bar" type="text" name="search-bar">
+      <div id="buttons">
+        <input class="search-button" type="submit" value="Google Search">
+        <input class="search-button" type="submit" value="I'm Feeling Lucky">
+      </div>
+    </form>
+
+    
+  </div>
+
+  <footer>
+    <span id="footer-left">
+      <a href="#">Advertising</a>
+      <a href="#">Business</a>
+      <a href="#">About</a>
+    </span>
+    <span id="footer-right">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Settings</a>
+    </span>
+  </footer>
+</body>
+</html>
